@@ -11,5 +11,5 @@ public interface AcademyUtenteDAO {
 	
 	public void addUtenteAcademy(String sql, UtenteAcademyDTO utenteAcademyDTO);
 	
-	public void selectUtenteByAcademy(String sql, String academyCode);
+	public void selectUtenteByAcademy(String sql, int academyId);
 }

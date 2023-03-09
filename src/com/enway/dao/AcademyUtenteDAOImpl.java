@@ -50,15 +50,14 @@ public class AcademyUtenteDAOImpl implements AcademyUtenteDAO{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 
 	@Override
-	public void selectUtenteByAcademy(String sql, String academyCode) {
+	public void selectUtenteByAcademy(String sql, int academyId) {
 		PreparedStatement ps = ConnectionManager.getPreparedStatement(sql);
 		try {
-			ps.setString(1, academyCode);
+			ps.setInt(1, academyId);
 			
 			ResultSet rs = ps.executeQuery();
 			
