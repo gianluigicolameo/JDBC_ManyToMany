@@ -6,4 +6,5 @@
  *
  */
 module JDBC_ManyToMany {
+	requires java.sql;
 }
