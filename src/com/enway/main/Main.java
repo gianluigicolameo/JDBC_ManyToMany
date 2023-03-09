@@ -3,6 +3,7 @@ package com.enway.main;
 import com.enway.dao.AcademyUtenteDAO;
 import com.enway.dao.AcademyUtenteDAOImpl;
 import com.enway.dto.AcademyDTO;
+import com.enway.dto.UtenteAcademyDTO;
 import com.enway.dto.UtenteDTO;
 
 public class Main {
@@ -16,6 +17,8 @@ public class Main {
 		
 		UtenteDTO utenteDto1 = new UtenteDTO("Flavio", "Menchinelli", 46);
 		academyUtenteDao.addUtente(SqlScripts.sqlUtenteInsert, utenteDto1);
+		
+		UtenteAcademyDTO utenteAcademyDto1 = new UtenteAcademyDTO();
 
 	}
 
