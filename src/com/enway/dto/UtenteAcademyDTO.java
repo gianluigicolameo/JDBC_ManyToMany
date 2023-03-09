@@ -2,30 +2,30 @@ package com.enway.dto;
 
 public class UtenteAcademyDTO {
 	
-	private String academyCode;
+	private int idAcademy;
 	
-	private int studentId;
+	private int idStudent;
 
-	public String getAcademyCode() {
-		return academyCode;
+	public int getIdAcademy() {
+		return idAcademy;
 	}
 
-	public void setAcademyCode(String academyCode) {
-		this.academyCode = academyCode;
+	public void setIdAcademy(int idAcademy) {
+		this.idAcademy = idAcademy;
 	}
 
-	public int getStudentId() {
-		return studentId;
+	public int getIdStudent() {
+		return idStudent;
 	}
 
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
+	public void setIdStudent(int idStudent) {
+		this.idStudent = idStudent;
 	}
 
-	public UtenteAcademyDTO(String academyCode, int studentId) {
+	public UtenteAcademyDTO(int idAcademy, int idStudent) {
 		super();
-		this.academyCode = academyCode;
-		this.studentId = studentId;
+		this.idAcademy = idAcademy;
+		this.idStudent = idStudent;
 	}
 	
 }
