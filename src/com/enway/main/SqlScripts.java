@@ -6,7 +6,7 @@ public interface SqlScripts {
 	
 	static final String sqlAcademyInsert = "insert into academy(academy_code, subject, number_of_students) values(?,?,?)";
 	
-	static final String sqlJointInsert = "insert into academy_utente() values()";
+	static final String sqlJointInsert = "insert into academy_utente(id_utente, id_academy) values(?,?)";
  	
 	static final String sqlUtenteDelete = "delete from utente where id=?";
 	
@@ -19,5 +19,9 @@ public interface SqlScripts {
 	static final String sqlUtenteRead = "select * from utente";
 	
 	static final String sqlAcademyRead = "select * from academy";
+	
+	static final String sqlSelectMaxAcademyId = "select max(id) from academy";
+	
+	static final String sqlSelectMaxUtenteId = "celect max(id) from utente";
 
 }

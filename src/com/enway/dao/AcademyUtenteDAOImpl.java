@@ -43,8 +43,8 @@ public class AcademyUtenteDAOImpl implements AcademyUtenteDAO{
 	public void addUtenteAcademy(String sql, UtenteAcademyDTO utenteAcademyDTO) {
 		PreparedStatement ps = ConnectionManager.getPreparedStatement(sql);
 		try {
-			ps.setString(1, utenteAcademyDTO.getAcademyCode());
-			ps.setInt(2, utenteAcademyDTO.getStudentId());
+			ps.setInt(1, utenteAcademyDTO.getIdAcademy());
+			ps.setInt(2, utenteAcademyDTO.getIdStudent());
 			ps.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
